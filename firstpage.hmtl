@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>website</title>
+    <link rel="stylesheet" href="./css/main.css"> 
+    <style>
+      @media all and (min-width:800px ) {
+body {
+  direction: rtl; /* step 1 */
+  width: 950px;
+  margin: 0 auto; /* beh ykouno l'elements fi nos safha */
+  border: 1px solid #000000; 
+}
+header, header img  {
+  height: 150px; /* step 9 */ 
+}
+header > nav {
+  float: left; /* step 2 */
+  background-color: #7ecf61 ;
+  margin-top: 40px;  /* step 7 */ 
+  
+}
+header nav ul li {
+  display: inline-block; /* step 3 */
+  padding-left: 35px;  /* step 4 */ 
+}
+header nav ul li a {
+  color: white; /* step 5 */ 
+  text-decoration: none; /* step 6 */ 
+}
+header + section  { /* step 10 */ 
+  background-image: url(../images/a4.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  border: 1px solid #000000; 
+}
+section +section {
+  overflow: hidden;
+}
+article {
+  display: inline-block; /* tji m3aha el vertical-align */
+  vertical-align: top;
+  width: 230px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 50px;
+  vertical-align: top;
+}
+article a {
+  float: left;
+}
+article img {
+  width :230px;
+  height: 150px;
+}
+article p {
+  text-align: justify;
+  height: 60px; /*beh lelement li wra heda ykouno au meme niveau*/
+}
+.lastSection img, .lastSection ul {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 100px;
+  color: white;
+}
+.lastSection, .lastSection img {
+ height: 100px;
+ background-color: #3463a0;
+}
+.lastSection {
+  margin-top: 40px;
+ }
+ .lastSection a  {
+  color: white;
+  text-decoration: none; 
+ }
+footer {
+  text-align: center;
+
+}
+footer li img {
+  width: 30px;
+  height: 30px;
+}
+footer li {
+  display: inline-block;
+  margin-left: 5px;
+}
+footer > nav  {
+margin-left: 30px;
+}
+header nav  li:hover, .lastSection  li:hover {
+  background-color: black;
+  font-size: 17px;
+  border-radius: 10px;
+  width: 100px;
+}
+article a:hover {
+  background-color:green;
+  width: 230px;
+  color: white;
+}
+article img:hover {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+}
+}
+@media all and (max-width: 480px){
+  body {
+    direction: rtl;
+
+  }
+  header  li {
+    display: inline-block;
+    padding: 5Px;
+    padding-top:20px ;
+    
+  }
+  header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header nav {
+    background-color: #8f291b;
+    height: 50px;
+    margin-bottom: 5px;
+    
+  }
+
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="images/mama.jpg" alt="no image">
+      <nav>
+        <ul>
+          <li><a href="">الصفحة الرئيسية</a></li>
+          <li><a href="">صور</a></li>
+          <li><a href="">من نحن</a></li>
+          <li><a href="">كلمة شكر</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <img src="images/cover.jpg" alt="no image">
+    </section>
+    <section>
+      <article>
+        <img src="images/a1.jpg" alt="image.png">
+        <p>الأم كلمة صغيرة وحروفها قليلة لكنّها تحتوي على أكبر معاني الحبّ والعطاء والحنان والتّضحية</p>
+        <a href="#">المزيد</a>
+      </article>
+      <article>
+        <img src="images/a2.jpg" alt="image.png">
+        <p>هي الصّدر الحنون الذي تُلقي عليه رأسك وتشكو إليه همومك ومتاعبك،</p>
+        <a href="#">المزيد</a>
+      </article>
+      <article>
+        <img src="images/a3.jpg" alt="image.png">
+        <p>الأم هي التي تعطي ولا تنتظر أن تأخذ مقابل العطاء، وهي التي مهما حاولتَ أن تفعل وتقدّم لها فلن تستطيع </p><a href="#">المزيد</a>
+      </article>
+    </section>
+    <section class="lastSection">
+      <img src="images/mama.jpg" alt="image.png">
+      <ul>شعر
+        <li><a href="#">المتنبي</a></li>
+        <li><a href="#">ابو العلاء</a></li>
+        <li><a href="#">امرؤ القيس </a></li>
+      </ul>
+      <ul>مقالات
+        <li><a href="#">المتنبي</a></li>
+        <li><a href="#">ابو العلاء</a></li>
+        <li><a href="#">امرؤ القيس </a></li>
+      </ul>
+      <ul>شعر
+        <li><a href="">المتنبي</a></li>
+        <li><a href="#">ابو العلاء</a></li>
+        <li><a href="#">امرؤ القيس </a></li>
+      </ul>
+      <ul>مقالات
+        <li><a href="#">المتنبي</a></li>
+        <li><a href="#">ابو العلاء</a></li>
+        <li><a href="#">امرؤ القيس </a></li>
+      </ul>
+    </section>
+    <footer>
+      <p>جميع الحقوق مسموحة للنشر والتوزيع</p>
+      <nav>
+        <ul>
+          <li><a href=""><img src="images/twitter.png" alt="image.png"></a></li>
+          <li><a href=""><img src="images/youtube.jpg" alt="image.png"></a></li>
+          <li><a href=""><img src="images/facebook.png" alt="image.png"></a></li>
+
+        </ul>
+      </nav>
+    </footer>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
